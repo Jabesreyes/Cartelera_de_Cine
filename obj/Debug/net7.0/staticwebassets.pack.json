@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\Cartelera.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\jabes\\Desktop\\DAS\\Cartelera\\wwwroot\\css\\peliculas.css",
+      "PackagePath": "staticwebassets\\css\\peliculas.css"
+    },
+    {
       "Id": "C:\\Users\\jabes\\Desktop\\DAS\\Cartelera\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\jabes\\Desktop\\DAS\\Cartelera\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\jabes\\Desktop\\DAS\\Cartelera\\wwwroot\\js\\peliculas.js",
+      "PackagePath": "staticwebassets\\js\\peliculas.js"
     },
     {
       "Id": "C:\\Users\\jabes\\Desktop\\DAS\\Cartelera\\wwwroot\\js\\site.js",

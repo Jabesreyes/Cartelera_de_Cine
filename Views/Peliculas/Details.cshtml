@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/peliculas.css" asp-append-version="true" />
+</head>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="@Model.PosterUrl" class="img-fluid" alt="Poster de la película">
+        </div>
+        <div class="col-md-6">
+            <h2>@Model.Titulo</h2>
+            <p>
+                <strong>Sinopsis:</strong> @Model.Sinopsis
+            </p>
+            <p>
+                <strong>Director:</strong> @Model.Director
+            </p>
+            <p>
+                <strong>Género:</strong> @Model.Genero
+            </p>
+            <form asp-action="Rate" asp-route-id="@Model.Id" method="post">
+                <div class="form-group">
+                    <label for="calificacion">Calificación:</label>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="calificacion" value="5" /><label for="star5" title="5 estrellas"></label>
+                        <input type="radio" id="star4" name="calificacion" value="4" /><label for="star4" title="4 estrellas"></label>
+                        <input type="radio" id="star3" name="calificacion" value="3" /><label for="star3" title="3 estrellas"></label>
+                        <input type="radio" id="star2" name="calificacion" value="2" /><label for="star2" title="2 estrellas"></label>
+                        <input type="radio" id="star1" name="calificacion" value="1" /><label for="star1" title="1 estrella"></label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-dark mt-3">Calificar</button>
+            </form>
+        </div>
+    </div>
+</div>

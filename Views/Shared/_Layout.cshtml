@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Cartelera</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />    
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Cartelera.styles.css" asp-append-version="true" />
 </head>
@@ -22,7 +22,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
-                        
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Peliculas" asp-action="Index">Peliculas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Peliculas" asp-action="Ranking">Ranking</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -36,12 +41,14 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - Cartelera, todos los derechos reservados para los estudiantes
+            &copy; 2023 - Cartelera - Todos los derechos reservados para el estudiante creador de la aplicacion.
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

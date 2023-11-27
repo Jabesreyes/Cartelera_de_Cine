@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<head>
+    <script src="https://kit.fontawesome.com/98cd0d0703.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<form asp-action="Index" method="get" class="form-inline">
+    <div class="input-group">
+        <input type="text" class="form-control" id="searchString" name="searchString" placeholder="Buscar pelicula por su nombre">
+        <button type="submit" class="btn btn-dark">Buscar</button>
+
+    </div>
+</form>
+
+
+
+<div class="container pt-5">
+    <div class="row">
+        @foreach (var pelicula in Model)
+        {
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="@pelicula.PosterUrl" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">@pelicula.Titulo</h5>
+                                <p class="card-text">Director: @pelicula.Director</p>
+                                <p class="card-text">Genero: @pelicula.Genero</p>
+                                <a href="@Url.Action("Details", "Peliculas", new { id = pelicula.Id })" class="btn btn-dark">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+

@@ -1,0 +1,37 @@
+﻿
+
+
+<div class="container mt-5">
+    <h2>Ranking de Películas</h2>
+    <canvas id="rankingChart"></canvas>
+</div>
+
+
+@section Scripts {
+    <script>
+        var ctx = document.getElementById('rankingChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Json.Serialize(ViewBag.Labels)),
+                datasets: [{
+                    label: 'Calificación promedio',
+                    data: @Html.Raw(Json.Serialize(ViewBag.Data)),
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 5
+                    }
+                }
+            }
+        });
+    </script>
+}
+
+

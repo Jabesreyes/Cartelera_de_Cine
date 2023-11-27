@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CW2HaZnasok7HPew7Vm9TFLkgcfuKLZzbXQZ3UqHVWM=",
+  "Hash": "ci6UgCOljm97DQ4OYQ410HF+QwPB8sUvbuh0aHaeTWk=",
   "Source": "Cartelera",
   "BasePath": "_content/Cartelera",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\jabes\\Desktop\\DAS\\Cartelera\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Cartelera.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\jabes\\Desktop\\DAS\\Cartelera\\wwwroot\\css\\peliculas.css",
+      "SourceId": "Cartelera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jabes\\Desktop\\DAS\\Cartelera\\wwwroot\\",
+      "BasePath": "_content/Cartelera",
+      "RelativePath": "css/peliculas.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\peliculas.css"
+    },
+    {
       "Identity": "C:\\Users\\jabes\\Desktop\\DAS\\Cartelera\\wwwroot\\css\\site.css",
       "SourceId": "Cartelera",
       "SourceType": "Discovered",
@@ -83,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\jabes\\Desktop\\DAS\\Cartelera\\wwwroot\\js\\peliculas.js",
+      "SourceId": "Cartelera",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jabes\\Desktop\\DAS\\Cartelera\\wwwroot\\",
+      "BasePath": "_content/Cartelera",
+      "RelativePath": "js/peliculas.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\peliculas.js"
     },
     {
       "Identity": "C:\\Users\\jabes\\Desktop\\DAS\\Cartelera\\wwwroot\\js\\site.js",
